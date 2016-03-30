@@ -1,6 +1,10 @@
 # idfuscate
 A library for obfuscating serial integer IDs.
 
+## how it works
+
+Given a alpha-numeric key of 18-36 (21-36 if you want a minimum 4 character code) unique characters, the translator creator returns an object with two methods: encode and decode. The first (encode), translates integer IDs into codes using your custom cipher key: With the pad option, 13 might become something like '14FY', 123 -> 'FHD1', 123456789 -> 'TTHHTC1', &c. The second (decode), translates the code back into an integer ID: '14FY' -> 13, 'FHD1' -> 123, 'TTHHTC1' -> 123456789, &c.
+
 ## install
 
 `npm install idfuscate`
