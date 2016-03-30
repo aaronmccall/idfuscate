@@ -1,0 +1,31 @@
+{
+  "name": "idfuscate",
+  "version": "0.0.1",
+  "description": "A library for obfuscating serial integer IDs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -c test",
+    "lint": "eslint lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronmccall/idfuscate.git"
+  },
+  "keywords": [],
+  "author": "Aaron McCall <aaron@andyet.net> (https://github.com/aaronmccall)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronmccall/idfuscate/issues"
+  },
+  "homepage": "https://github.com/aaronmccall/idfuscate#readme",
+  "devDependencies": {
+    "code": "^2.1.1",
+    "eslint": "^2.5.3",
+    "git-validate": "^2.1.4",
+    "lab": "^10.3.0"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
+}
